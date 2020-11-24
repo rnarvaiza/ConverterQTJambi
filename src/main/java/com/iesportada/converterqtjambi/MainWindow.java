@@ -259,11 +259,9 @@ public class MainWindow implements com.trolltech.qt.QUiForm<QMainWindow>
         returnConvertedAmountTextField.setText(utils.convertedQuantity());
        }
        else{
-       String message= "El campo cantidad debe de ser un número";
-        JOptionPane.showConfirmDialog(null, message, "Error", JOptionPane.CLOSED_OPTION, JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showConfirmDialog(null, Constants.ERROR_MESSAGE, "Error", JOptionPane.CLOSED_OPTION, JOptionPane.INFORMATION_MESSAGE);
 
        }
-
     }
 
     void retranslateUi(QMainWindow MainWindow)

@@ -28,7 +28,6 @@ public class Utils {
     }
     
 
-
     /**
      * @return the fromCurrency
      */
@@ -61,17 +60,7 @@ public class Utils {
     private String toCurrency;
     private String incommingQuantity;
     
-    
-    
-    public HashMap<String, Double> currencyRate(){
-        
-        HashMap<String, Double> map = new HashMap<String, Double>();
-        map.put("Euro", 1.00);
-        map.put("Libra", 0.89);
-        map.put("Franco", 1.08);
-        map.put("Dolar", 1.19);
-        return map;
-    }
+
 
     public String convertedQuantity(){
         //Double amount = (((Double.parseDouble(getToCurrency())/Double.parseDouble(getFromCurrency()))*Double.parseDouble(getIncommingQuantity())));

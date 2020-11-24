@@ -7,8 +7,15 @@ package com.iesportada.converterqtjambi;
 
 /**
  *
- * @author s0ck3
+ * @author rnarvaiza
  */
+
 public class Constants {
+    
+    public static final Double EURO = 1.00;
+    public static final Double LIBRA = 0.89;
+    public static final Double FRANCO = 1.08;
+    public static final Double DOLAR = 1.19;
+    public static final String ERROR_MESSAGE = "El campo cantidad debe de ser un número";
     
 }
