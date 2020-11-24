@@ -3,6 +3,11 @@ import com.trolltech.qt.core.*;
 import com.trolltech.qt.gui.*;
 import javax.swing.JOptionPane;
 
+/**
+ *
+ * @author rnarvaiza
+ */
+
 public class MainWindow implements com.trolltech.qt.QUiForm<QMainWindow>
 {
     public QWidget centralwidget;
@@ -248,6 +253,10 @@ public class MainWindow implements com.trolltech.qt.QUiForm<QMainWindow>
         convertPushButton.clicked.connect(this, "showMeFeedback()");
         
     } // setupUi
+    
+    /**
+     * Here we achieve and share desired currencies and amounts in order to get processed.
+     */
     
     private void showMeFeedback(){
         

@@ -11,10 +11,14 @@ import com.trolltech.qt.gui.QMainWindow;
 
 /**
  *
- * @author s0ck3
+ * @author rnarvaiza
  */
 public class Main {
     public static void main(String[] args) {
+        
+        /**
+         * Main class which initialize the QtMainWindow
+         */
         
         QApplication.initialize(args);
         QMainWindow mainwindow = new QMainWindow();

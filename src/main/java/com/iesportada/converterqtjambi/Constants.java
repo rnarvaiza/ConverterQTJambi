@@ -10,6 +10,11 @@ package com.iesportada.converterqtjambi;
  * @author rnarvaiza
  */
 
+
+/**
+ * Place for K declaration & initialization
+ *
+ */
 public class Constants {
     
     public static final Double EURO = 1.00;

@@ -61,15 +61,20 @@ public class Utils {
     private String incommingQuantity;
     
 
+    /**
+     * Method designed to work with a pair of key / value which will be matched
+     * with the selected currencies on MainWindow.
+     * All the parsings are treated inside to avoid unintelligible chains of callings and parsings.
+     * @return the conversion of the desired amount and currency on a String.
+     */
 
     public String convertedQuantity(){
-        //Double amount = (((Double.parseDouble(getToCurrency())/Double.parseDouble(getFromCurrency()))*Double.parseDouble(getIncommingQuantity())));
+   
         HashMap<String, Double> map = new HashMap<>();
-        map.put("Euro", 1.00);
-        map.put("Libra", 0.89);
-        map.put("Franco", 1.08);
-        map.put("Dolar", 1.19);
-        
+        map.put("Euro", Constants.EURO);
+        map.put("Libra", Constants.LIBRA);
+        map.put("Franco", Constants.FRANCO);
+        map.put("Dolar", Constants.DOLAR);
         Double amount = (map.get(getToCurrency())/map.get(getFromCurrency()))*Double.parseDouble(getIncommingQuantity());
         
         return  Double.toString(amount);
